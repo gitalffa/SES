@@ -1,0 +1,8 @@
+[17-Apr-2019 17:10:36 UTC] PHP Warning:  file_get_contents(https://maps.googleapis.com/maps/api/geocode/json?address=&amp;key=AIzaSyC2t1pKMQqTMjPQJDGBAQUqMQK5tqmbAsI): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home/siempree/public_html/memo/index.php on line 41
+[17-Apr-2019 17:38:04 UTC] PHP Warning:  file_get_contents(https://maps.googleapis.com/maps/api/geocode/json?address=&amp;key=AIzaSyC2t1pKMQqTMjPQJDGBAQUqMQK5tqmbAsI): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home/siempree/public_html/memo/index.php on line 41
+[17-Apr-2019 17:41:17 UTC] PHP Warning:  file_get_contents(https://maps.googleapis.com/maps/api/geocode/json?address=&amp;key=AIzaSyC2t1pKMQqTMjPQJDGBAQUqMQK5tqmbAsI): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home/siempree/public_html/memo/index.php on line 41
+[17-Apr-2019 17:41:19 UTC] PHP Warning:  file_get_contents(https://maps.googleapis.com/maps/api/geocode/json?address=&amp;key=AIzaSyC2t1pKMQqTMjPQJDGBAQUqMQK5tqmbAsI): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home/siempree/public_html/memo/index.php on line 41

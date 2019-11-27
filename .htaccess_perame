@@ -1,0 +1,4 @@
+ErrorDocument 404 mi404.php
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.siempreestoyseguro.com/$1 [R,L]
