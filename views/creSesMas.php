@@ -330,7 +330,7 @@
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
     $from = "info@siempreestoyseguro.com";
-    //$para = "52"."$celEme1";
+    $para = "52"."$celEme1";
     $to = $corEme1;
     $subject = "Correo enviado por siempreestoyseguro.com";
     $message = utf8_encode("Ha sido leido el QR adscrito a  $nombre  el dia $fechaLectura.
@@ -351,6 +351,18 @@ $whatsmsapi->sendSms("$para", "$message");*/
     mail($to,$subject,$message, $headers);
     echo "El mensaje ha sido enviado $fechaLectura.";
 
+ $inserta=$mysqli->query("insert into localizacion (id,idPer,localizacion,fecha,status) value ('0','$idPer',ST_GeomFromText('POINT($latitud $longitud)'),'$fechaLectura',1)");
+    if($inserta==False){
+       ?>
+                    <section >
+                        <div class="callout success small-6 column  small-offset-3 text-center">
+                                Ocurrio un error en la insersión.
+                                <?php echo $mysqli->error; ?>
+                        </div>
+                    </section>
+                    
+                    <?php
+    }
 
 /*//SMS Semysms
 

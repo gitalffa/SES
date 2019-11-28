@@ -537,10 +537,10 @@
     $message = utf8_encode("Ha sido leido el QR adscrito a  $nombre $apellidos  el dia $fechaLectura.
     Da click en la siguiente liga para ubicarlo : https://www.google.com/maps/place/$latitud,$longitud
     ");
-require_once('../Models/personas/WhatsmsApi.php');
+/*require_once('../Models/personas/WhatsmsApi.php');
 $whatsmsapi = new WhatsmsApi();
 $whatsmsapi->setApiKey("5d0feb8a2184c");
-$whatsmsapi->sendSms("$para", "$message");
+$whatsmsapi->sendSms("$para", "$message");*/
   $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
     echo "El mensaje ha sido enviado $fechaLectura.";
